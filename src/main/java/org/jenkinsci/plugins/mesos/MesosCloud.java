@@ -82,7 +82,7 @@ public class MesosCloud extends Cloud {
 
   @Initializer(after=InitMilestone.JOB_LOADED)
   public static void init() {
-      LOGGER.info("Mesos init");
+  LOGGER.info("Mesos init");
 
     Jenkins jenkins = Jenkins.getInstance();
     List<Node> slaves = jenkins.getNodes();
